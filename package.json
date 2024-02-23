@@ -15,7 +15,9 @@
 		"@fontsource/raleway": "^4.5.0",
 		"@fontsource/roboto": "^4.5.0",
 		"apexcharts": "^3.27.3",
+		"chakra-react-select": "^4.7.6",
 		"classnames": "2.3.1",
+		"formik": "^2.4.5",
 		"framer-motion": "4.1.17",
 		"match-sorter": "6.3.0",
 		"moment": "2.29.1",
@@ -32,6 +34,7 @@
 		"react-jvectormap": "0.0.16",
 		"react-router-dom": "5.2.0",
 		"react-scripts": "5.0.0",
+		"react-select-search": "^4.1.7",
 		"react-swipeable-views": "0.14.0",
 		"react-table": "7.7.0",
 		"react-tagsinput": "3.19.0",
@@ -65,7 +68,15 @@
 		"prettier": "2.2.1"
 	},
 	"browserslist": {
-		"production": [ ">0.2%", "not dead", "not op_mini all" ],
-		"development": [ "last 1 chrome version", "last 1 firefox version", "last 1 safari version" ]
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
 	}
 }

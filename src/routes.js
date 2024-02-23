@@ -7,6 +7,8 @@ import RTLPage from "views/RTL/RTLPage.js";
 import Profile from "views/Dashboard/Profile.js";
 import SignIn from "views/Pages/SignIn.js";
 import SignUp from "views/Pages/SignUp.js";
+import AddEmployee from "views/Dashboard/AddEmployee.js"
+import AddClient from "views/Dashboard/AddClient.js"
 
 import {
   HomeIcon,
@@ -44,12 +46,31 @@ var dashRoutes = [
     layout: "/admin",
   },
   {
-    path: "/rtl-support-page",
-    name: "RTL",
-    rtlName: "آرتيإل",
-    icon: <SupportIcon color='inherit' />,
-    component: RTLPage,
-    layout: "/rtl",
+    name: "Employee Details",
+    category: "account",
+    rtlName: "صفحات",
+    state: "pageCollapse",
+    views: [
+      {
+        path: "/addemployee",
+        name: "Add Employee",
+        rtlName: "لوحة القيادة",
+        icon: <PersonIcon color='inherit' />,
+        secondaryNavbar: true,
+        component: AddEmployee,
+        layout: "/admin",
+      },
+      {
+        path: "/addclient",
+        name: "Add Client",
+        rtlName: "لوحة القيادة",
+        icon: <PersonIcon color='inherit' />,
+        secondaryNavbar: true,
+        component: AddClient,
+        layout: "/admin",
+      },
+      
+    ],
   },
   {
     name: "ACCOUNT PAGES",

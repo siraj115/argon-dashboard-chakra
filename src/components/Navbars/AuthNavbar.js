@@ -67,7 +67,7 @@ export default function AuthNavbar(props) {
           ms="0px"
           me="0px"
           px="0px"
-          me={{ sm: "2px", md: "16px" }}
+          //me={{ sm: "2px", md: "16px" }}
           color={navbarIcon}
           variant="no-effects"
           leftIcon={<HomeIcon color={navbarIcon} w="12px" h="12px" me="0px" />}
@@ -81,7 +81,7 @@ export default function AuthNavbar(props) {
           ms="0px"
           me="0px"
           px="0px"
-          me={{ sm: "2px", md: "16px" }}
+          //me={{ sm: "2px", md: "16px" }}
           color={navbarIcon}
           variant="no-effects"
           leftIcon={
@@ -97,7 +97,7 @@ export default function AuthNavbar(props) {
           ms="0px"
           me="0px"
           px="0px"
-          me={{ sm: "2px", md: "16px" }}
+         // me={{ sm: "2px", md: "16px" }}
           color={navbarIcon}
           variant="no-effects"
           leftIcon={
@@ -156,27 +156,8 @@ export default function AuthNavbar(props) {
             secondary={props.secondary}
             routes={routes}
             logo={
-              <Stack
-                direction="row"
-                spacing="12px"
-                align="center"
-                justify="center"
-              >
-                {colorMode === "dark" ? (
-                  <ArgonLogoLight w="74px" h="27px" />
-                ) : (
-                  <ArgonLogoDark w="74px" h="27px" />
-                )}
-                <Box
-                  w="1px"
-                  h="20px"
-                  bg={colorMode === "dark" ? "white" : "gray.700"}
-                />
-                {colorMode === "dark" ? (
-                  <ChakraLogoLight w="82px" h="21px" />
-                ) : (
-                  <ChakraLogoDark w="82px" h="21px" />
-                )}
+              <Stack direction='row' spacing='12px' align='center' justify='center'>
+                <Text fontSize="xl">ZAS Payroll</Text>
               </Stack>
             }
             {...rest}
